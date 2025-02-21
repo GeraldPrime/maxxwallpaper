@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Products || Ambed || Ambed HTML 5 Template </title>
+    <title> Shop || Maxxwallpaper </title>
     <!-- favicons Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
@@ -54,7 +54,14 @@
 
     <!-- toolbar css -->
     <link rel="stylesheet" href="assets/vendors/toolbar/css/toolbar.css">
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <style>
+        /* Hide logo on screens smaller than 768px */
+       @media (max-width: 767px) {
+       .main-header__logo {
+           display: none !important;
+       }
+   }
+   </style>
 
 
 </head>
@@ -155,19 +162,12 @@
                                            
                                         </li>
                                         <li>
-                                            <a >About </a>
+                                            <a href="about.html" >About </a>
                                         </li>
                                        
+                                       
                                         <li >
-                                            <a >Projects</a>
-                                            <!-- <ul>
-                                                <li><a href="projects.html">Our Projects</a></li>
-                                                <li><a href="projects-carousel.html">Projects Carousel</a></li>
-                                                <li><a href="project-details.html">Project Details</a></li>
-                                            </ul> -->
-                                        </li>
-                                        <li >
-                                            <a >Services </a>
+                                            <a href="services.html">Services </a>
                                             <!-- <ul>
                                                 <li><a href="services.html">Services</a></li>
                                                 <li><a href="services-carousel.html">Services Carousel</a></li>
@@ -199,8 +199,7 @@
                                                 <li><a href="blog-details.html">Blog Details</a></li>
                                             </ul>
                                         </li> -->
-                                        <li><a 
-                                            >Contact </a>
+                                        <li><a href="contact.html">Contact </a>
                                         </li>
                                     </ul>
                                 </div>
@@ -282,12 +281,11 @@
                     <div class="footer-widget__column footer-widget__explore clearfix">
                         <h3 class="footer-widget__title">Explore</h3>
                         <ul class="footer-widget__explore-list list-unstyled clearfix">
-                            <li><a>About</a></li>
-                            <li><a >Contact</a></li>
-                            <li><a >Our Team</a></li>
-                            <li><a >Our Services</a></li>
-                            <li><a >Latest Projects</a></li>
-                            <li><a >Pricing & Plans</a></li>
+                            <li><a href="shop.html">Shop</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                         
                         </ul>
                     </div>
                 </div>
@@ -296,11 +294,11 @@
                         <h3 class="footer-widget__title">Services</h3>
                         <ul class="footer-widget__services-list list-unstyled clearfix">
                             <li><a >Room Wallpaper</a></li>
-                            <li><a >Wall Painting</a></li>
                             <li><a >Wall Sheets</a></li>
-                            <li><a >Outdoor Designs</a></li>
-                            <li><a >PVC Panels</a></li>
-                            <li><a >Interior Design</a></li>
+                            <li><a >Wall Tiles</a></li>
+                            <li><a >interior Designing</a></li>
+                            <li><a >Ceiling Designs</a></li>
+                            <li><a >Flooring Solutions</a></li>
                         </ul>
                     </div>
                 </div>
@@ -356,6 +354,46 @@
     </div>
 </footer>
 <!--Site Footer End-->
+
+<div class="mobile-nav__wrapper">
+    <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+    <!-- /.mobile-nav__overlay -->
+    <div class="mobile-nav__content">
+        <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
+
+        <div class="logo-box">
+            <a href="index.html" aria-label="logo image"><img style="height: 80px; width:100px;" src="assets/images/resources/formax/maxlogo.jpg"
+                    width="155" alt="" /></a>
+        </div>
+        <!-- /.logo-box -->
+        <div class="mobile-nav__container"></div>
+        <!-- /.mobile-nav__container -->
+
+        <ul class="mobile-nav__contact list-unstyled">
+            <li>
+                <i class="fa fa-envelope"></i>
+                <a href="mailto:maxxwallpaper.abuja@gmail.com">maxxwallpaper.abuja@gmail.com</a>
+            </li>
+            <li>
+                <i class="fa fa-phone-alt"></i>
+                <a href="tel:666-888-0000">234 8145463027</a>
+            </li>
+        </ul><!-- /.mobile-nav__contact -->
+        <div class="mobile-nav__top">
+            <div class="mobile-nav__social">
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-facebook-square"></a>
+                <a href="#" class="fab fa-pinterest-p"></a>
+                <a href="#" class="fab fa-instagram"></a>
+            </div><!-- /.mobile-nav__social -->
+        </div><!-- /.mobile-nav__top -->
+
+
+
+    </div>
+    <!-- /.mobile-nav__content -->
+</div>
+<!-- /.mobile-nav__wrapper -->
   
 
 
